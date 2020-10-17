@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DatabindingBasicComponent implements OnInit {
 
   myDB : string
+  tw : string = ''
 
   constructor() { }
 
