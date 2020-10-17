@@ -1,4 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { types } from 'util';
+import { BtnEvents } from './events';
 
 @Component({
   selector: 'app-custom-component',
@@ -13,10 +15,20 @@ export class CustomComponentComponent implements OnInit {
   @Input()
   clstyp : string
 
+  @Output()
+  btnOutput : EventEmitter<BtnEvents> = new EventEmitter()
+
   constructor() { }
 
   ngOnInit(): void {
     this.clstyp = `alert alert-${this.clstyp}`
   }
 
+  onClk(){
+    let eve : BtnEvents = {
+      titles : this.title,
+      type : this.clstyp
+    }
+    this.btnOutput.emit(eve)
+  }
 }
