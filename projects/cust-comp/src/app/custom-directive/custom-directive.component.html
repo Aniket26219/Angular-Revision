@@ -23,7 +23,7 @@
 <div class="row">
     <div class="col-md-12">
         <ol>
-            <li *ngFor="let mb of (mobiles)"> {{mb}} </li>
+            <li *ngFor="let mb of (mobiles); let ind = index;"> {{mb}} => {{ind}} </li>
         </ol>
     </div>
 </div>
