@@ -11,7 +11,7 @@
 </div>
 
 <!-- ngIf using ng-template -->
-<ng-template [ngIf]="true">
+<ng-template [ngIf]="false">
     <div class="row">
         <div class="col-md-12">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, assumenda!
@@ -20,3 +20,10 @@
 </ng-template>
 
 <!-- Structural Directive = ngFor -->
+<div class="row">
+    <div class="col-md-12">
+        <ol>
+            <li *ngFor="let mb of (mobiles)"> {{mb}} </li>
+        </ol>
+    </div>
+</div>
