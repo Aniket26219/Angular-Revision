@@ -1,12 +1,13 @@
-import { Directive, ElementRef, HostBinding, HostListener, Renderer2, OnInit, Output } from '@angular/core';
+import { Directive, ElementRef, HostBinding, HostListener, Renderer2, OnInit, Output, Input } from '@angular/core';
 
 @Directive({
   selector: '[appCustDirective]'
 })
 export class CustDirectiveDirective {
 
+  @Input()
   @HostBinding('class')
-  cl : string
+  public cl : string
 
   @HostBinding('style.font-size')
   font : string
