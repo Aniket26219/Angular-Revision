@@ -2,7 +2,7 @@
   <app-custom-component [title]="'This is Java.'" [clstyp]="'primary'" (btnOutput)="onBtn($event)"></app-custom-component>
   <app-custom-component [title]="'This is Python.'" [clstyp]="'danger'" (btnOutput)="onBtn($event)"></app-custom-component>
   <app-custom-component [title]="'This is Angular.'" [clstyp]="'secondary'" (btnOutput)="onBtn($event)"></app-custom-component>
-  <div class="row">
+  <div class="row" appCustDirective>
     <div class="col-md-12">
       Clicked on {{mainev?.titles}} and alert is {{mainev?.type}}
     </div>
