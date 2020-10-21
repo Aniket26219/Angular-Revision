@@ -1,0 +1,11 @@
+<div class="row">
+    Selected Alert is {{alrtPicked?.alrts}}
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <app-alrt-picker (picker)="alrtPicker($event)"></app-alrt-picker>
+    </div>
+    <div class="col-md-6">
+        <app-alrt-main [alrte]="alrtPicked"></app-alrt-main>
+    </div>
+</div>
