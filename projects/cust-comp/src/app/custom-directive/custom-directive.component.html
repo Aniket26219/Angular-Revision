@@ -1,29 +1,31 @@
-<div class="row" [appCustDirective]="'alert alert-success'">
+<!-- <div class="row" [appCustDirective]="'alert alert-success'">
     <div class="col-md-12">
         Sample Text
     </div>
-</div>
+</div> -->
 <!-- Structural Directive = ngIf -->
-<div class="row" *ngIf = "false">
+<!-- <div class="row" *ngIf = "false">
     <div class="col-md-12">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, assumenda!
     </div>
-</div>
+</div> -->
 
 <!-- ngIf using ng-template -->
-<ng-template [ngIf]="false">
+<!-- <ng-template [ngIf]="false">
     <div class="row">
         <div class="col-md-12">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, assumenda!
         </div>
     </div>
-</ng-template>
+</ng-template> -->
 
 <!-- Structural Directive = ngFor -->
-<div class="row">
+<div class="row" *appUnless="false">
     <div class="col-md-12">
         <ol>
             <li *ngFor="let mb of (mobiles); let ind = index;"> {{mb}} => {{ind}} </li>
         </ol>
     </div>
 </div>
+
+<!-- In above if we make that custom structural directive true then it will show the list and if we make it false it will not show the list items -->
