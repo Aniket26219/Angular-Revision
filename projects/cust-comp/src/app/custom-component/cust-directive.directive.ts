@@ -8,6 +8,9 @@ export class CustDirectiveDirective {
   @HostBinding('class')
   cl : string
 
+  @HostBinding('style.font-size')
+  font : string
+
   constructor(
     private elemtref : ElementRef,
     private render : Renderer2
@@ -19,12 +22,14 @@ export class CustDirectiveDirective {
 
   @HostListener('mouseenter')
   OnInit(){
-    this.cl = `alert alert-dark`
+    this.cl = `alert alert-warning`
+    this.font = 'larger'
   }
 
   @HostListener('mouseleave')
   Output(){
     this.cl = `alert alert-light`
+    this.font = 'medium'
   }
 
 }
