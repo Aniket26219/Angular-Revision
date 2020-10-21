@@ -3,8 +3,20 @@
         Sample Text
     </div>
 </div>
+<!-- Structural Directive = ngIf -->
 <div class="row" *ngIf = "false">
     <div class="col-md-12">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, assumenda!
     </div>
 </div>
+
+<!-- ngIf using ng-template -->
+<ng-template [ngIf]="true">
+    <div class="row">
+        <div class="col-md-12">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, assumenda!
+        </div>
+    </div>
+</ng-template>
+
+<!-- Structural Directive = ngFor -->

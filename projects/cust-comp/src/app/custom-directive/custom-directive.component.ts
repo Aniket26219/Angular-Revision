@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomDirectiveComponent implements OnInit {
 
+  mobiles = ['Redmi', 'Samsung', 'Realme', 'OnePlus', 'Iphone']
+
   constructor() { }
 
   ngOnInit(): void {
