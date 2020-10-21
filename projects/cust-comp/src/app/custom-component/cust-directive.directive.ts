@@ -5,7 +5,7 @@ import { Directive, ElementRef, HostBinding, HostListener, Renderer2, OnInit, Ou
 })
 export class CustDirectiveDirective {
 
-  @Input()
+  @Input('appCustDirective')
   @HostBinding('class')
   public cl : string
 
