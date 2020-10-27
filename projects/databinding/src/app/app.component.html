@@ -1,3 +1,6 @@
 <div class="container">
-  <app-databinding-basic></app-databinding-basic>
+  <!-- <app-databinding-basic></app-databinding-basic> -->
+  <app-lifecycle *ngIf = "val" [inputvar]="title"></app-lifecycle>
+  <input type="button" value="Click" (click)="val =! val" class="btn btn-outline-primary">
+  <input type="button" value="Change Value" (click)="onClk()" class="btn btn-outline-success">
 </div>

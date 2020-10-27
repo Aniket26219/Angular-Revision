@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'databinding';
+  val = false
+
+  onClk(){
+    this.title = new Date().toDateString()
+  }
 }
